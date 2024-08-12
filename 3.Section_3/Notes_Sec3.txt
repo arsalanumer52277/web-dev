@@ -1,0 +1,99 @@
+1.The Un-ordered List gives bullet points :
+	ex : <ul>
+		<li>Milk</li>
+		<li>Eggs</li>
+		<li>Floor</li>
+	     </ul>
+	output :
+		(bulletpoint) Milk
+		(bulletpoint) EGGS
+		(bulletpoint) Floor
+*-------------------------------------------------------------------'
+
+2. The Ordered List gives number in a sequential way : 
+	ex : <ol>
+		<li>Milk</li>
+		<li>Eggs</li>
+		<li>Floor</li>
+	     </ol>
+	output :
+		1. Milk
+		2. EGGS
+		3.Floor
+*--------------------------------------------------------------------'
+
+3 WHEN we use nesting we should follow it properly :
+
+    Wrong example :         Wrong way of writing
+    
+                            <ul>
+                                 <li>A</li>
+//NESTING STARTS INSIDE B:       <li>B</li>        i.e : a and b should be written inside B list before the cloure of the list[</li>].
+			            <li>a</li>
+                                    <li>b</li>
+                                 <li>C</li>
+                            </ul> 
+****************
+
+    Correct Example : Actual way of writing 
+
+                            <ul>
+                                <li>A</li>
+//NESTING STARTS INSIDE B:      <li>B
+                                    <li>a</li>
+                                    <li>b</li>
+                                </li>
+                                <li>C</li>
+                            </ul>
+
+-------------------------------------------------------------------------'
+
+
+4. Anchor TAG : 
+		EX : <a href = "www.google.com">This is an Anchor tag</a>
+
+Html attribute : 
+	syntax : 	<tag attribute = value> Content </tag>
+
+Note :- We can have multiple attributes at once
+	    ex :	<tag attribute=value another attribute=value> Content</tag> 
+
+---------------------------------------------------------------------------'
+
+5. Writing 'start = ""' attribute after the <ol> or <ul> tag  will initiate the list from that number.
+	example : 
+			<ol>				Output : 1.A
+			   <li>A</li>				 2.B
+			   <li>B</li>			
+ 
+			</ol>
+
+	example for using 'start=""' attribute : 
+ 
+			<ol start = "5">		Output : 5.A     	//So here the list is starting from no.5 aand not from no.1
+			   <li>A</li>				 6.B
+			   <li>B</li>			
+ 
+			</ol>
+
+---------------------------------------------------------------------------'
+
+6.The Image tag or img tag :
+ 
+	Syntax : <img src="url"/>
+
+** The "alt" attribute : [Full form: Alternative Text Description.]
+  
+	Syntax : <img src ="http://picsum.photos/200" alt="forest at sunset"/> 
+
+
+
+
+
+
+
+
+
+
+
+

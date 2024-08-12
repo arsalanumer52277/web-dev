@@ -1,0 +1,178 @@
+1. CSS : Cascading Style Sheet
+
+2. Three ways of adding Css  :
+
+ 	Inline  : <tag style="css"/>
+
+	Internal: <style>css</style>
+
+	External: <link href="style.css"/>
+-----------------------------------------------------------------------------------------------------------------------------------'
+
+3. Inline Css : 
+	Inline styles are styles that are applied to a specific element within the body section of the webpage.
+The style will be applied to that individual element only rather than to the entire page (internal style) or 
+across all linked pages (external style sheet).
+	
+	ex: <html style="background:blue"></html>   //This will change the background color of webpage to blue.
+
+-----------------------------------------------------------------------------------------------------------------------------------'
+
+4.Internal CSS : 
+	Mainly used for single web page.
+
+	ex : <html>
+		<head>
+		   <style>
+			html{
+			   background:red;	
+			 }
+		    </style>
+		</head>
+	      </html>
+
+-----------------------------------------------------------------------------------------------------------------------------------'
+
+5.External Css : 
+	An external style sheet is a separate CSS file that can be accessed by creating a
+link within the head section of the webpage. Multiple webpages can use the same link to access
+the stylesheet.
+
+	ex  : 
+	     
+             <html>
+		<head>
+		   <link rel="stylesheet" href="./style.css"/>	   //	Here The external CSS is linked. 
+		</head>
+	      </html>
+
+
+	style.css :
+	
+		html{
+		  background:green;
+		 }
+		
+-----------------------------------------------------------------------------------------------------------------------------------'
+
+6.Preference : 
+	1st :  Inline	
+	2nd :  Internal
+	3rd :  External
+
+-----------------------------------------------------------------------------------------------------------------------------------'
+
+7.Css Selectors : 
+
+	index.html file -
+			<h2>Red</h2>			
+			<h2>Green</h2>
+			<h2>Blue</h2>
+	
+	style.css file -
+			h2{					//Here h2 is the selector
+			   color: red;
+			}
+Output : All the text Red Green and Blue will change their color to (red) but thatis not we want, right?
+*Therefore  to resolve this issue we have (class) selectors.
+
+-----------------------------------------------------------------------------------------------------------------------------------'
+
+8.Class Selectors : 
+		syntax :
+			.red-heading{		        //For class selector we will start with a DOT(.) followed by class name.
+			   color: red
+			 }
+
+NOTE : CLASS is an attribute that can be added to any html element.It is used for grouping element in Html file.
+
+Example :
+	index.html file -
+			<h2 class ="red-text">Red</h2>			
+			<h2 class ="green-text">Green</h2>
+			<h2 class ="blue-text">Blue</h2>
+	
+	style.css file -
+			.red-text{					
+			   color: red;
+			}
+			.green-text{					
+			   color: green;
+			}
+			.blue-text{					
+			   color: blue;
+			}
+Output : Now the text RED will change to color red, text Green to color green and text blue to color blue.
+Note : A class attribute can be applied to multiple element to style them easily.
+
+	Example : 
+		<link rel = "stylesheet" href = "style.css">
+
+		<h2 class ="red-text">Red</h2>			
+		<h2 class ="green-text">Green</h2>
+		    <p class ="red-text">Hey,we can use/add class attribute here as well and to as many elements if we want to</p> 
+
+		Style : 
+		.red-text{					
+			   color: red;
+			}
+
+Output : The color of paragraph text will also become red  along  with the text Red.  [used : class = "red-text"]
+
+-----------------------------------------------------------------------------------------------------------------------------------'
+
+9.Id Selector : 
+	
+	Syntax : 
+		For Html:  <h1 id="main">Hey there</h1> 
+	
+		For Css :	#main{
+				   color: green;
+				}
+Note  :  A CLASS selector can be applied to multiple elements.
+	 An ID selector can only be applied to only one  element in a single html file.
+
+-----------------------------------------------------------------------------------------------------------------------------------'
+
+10. Attribute Selector : 
+
+	html : 
+		<p draggable="true">Drag me</p>
+		<p draggable="false">Don't drag me</p>
+
+	Css  :
+		 p[draggable="true"]{
+    			color:blue;
+		  }
+
+	 	 p[draggable="false"]{
+    			color: Green
+		  }
+
+-----------------------------------------------------------------------------------------------------------------------------------'
+
+11.Universal Selector :
+
+	Syntax : 
+		 *{
+		   color:red
+		  }
+
+Note : The Universal selector will apply the style to every element.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

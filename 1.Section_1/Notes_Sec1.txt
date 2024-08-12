@@ -1,0 +1,26 @@
+1. To check the IP address (ex : IP address of google)...Visit website : NsLookup.io 
+       [Link  : https://www.nslookup.io/]
+
+-------------------------------------------------------------------'
+
+2.Internet cables(networks) are distributed unders the sea. To view these cable Visit website: \submarinecablemap
+       [Link : https://www.submarinecablemap.com/] 
+
+-------------------------------------------------------------------'
+
+3. To INSPECT any website use command : 
+	/* MAC */
+		cmd + shift + c   /* <-- opens eliments */
+		cmd + shift + i  /* <-- opens console */
+		F12		/* <-- opens console */
+
+	/* WINDOWS */
+		ctrl + shift + c   /* <-- opens eliments */
+		ctrl + shift + i  /* <-- opens console */
+		F12		 /* <-- opens console */
+
+-------------------------------------------------------------------'
+
+4. DiffChecker :
+	This website will check the Original Code vs the modified code to compare and check all the changes done.
+	 {LINK : https://diffchecker.com/text-compare/ }

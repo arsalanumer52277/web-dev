@@ -1,0 +1,53 @@
+<!--This is the wong code-->
+
+<ul>
+
+    <li>A</li>
+    <li>B</li>
+        <ol>
+            <li>B1</li>
+            <li>B2</li>
+                <ul>
+                    <li>B2a</li>
+                        <ul>
+                            <li>B2aa</li>
+                            <li>B2ab</li>
+                        </ul>
+                    <li>B2b</li>
+                    <li>B2c</li>
+                </ul>
+            <li>B3</li>   
+                <ol>
+                    <li>B31</li>
+                    <li>B32</li>
+                </ol>       
+        </ol>
+    <li>C</li>
+</ul>
+
+
+
+<!--WHEN we use nesting we should follow it properly :
+
+    Wrong example :         Wrong way of writing
+    
+                            <ul>
+                                 <li>A</li>
+                                 <li>B</li>        i.e : a and b should be written inside B list before the cloure of the list[</li>].
+NESTING STARTS INSIDE B             <li>a</li>
+                                    <li>b</li>
+                                 <li>C</li>
+                            </ul> 
+------------------------------------------------------------------------------------------------
+
+    Correct Example : Actual way of writing 
+
+                            <ul>
+                                <li>A</li>
+NESTING STARTS INSIDE B         <li>B
+                                    <li>a</li>
+                                    <li>b</li>
+                                </li>
+                                <li>C</li>
+                            </ul>
+-->

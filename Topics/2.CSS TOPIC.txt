@@ -1,0 +1,7 @@
+**2** CSS :
+
+//Section - 5 : 
+
+	1.Inline/Internal/External Css		2.Css Selectors			3.Class Selector		4.Id Selector	
+	
+	5.Attribute  Selector			6.Universal Selector
